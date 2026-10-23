@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Frasco de ejemplo, de frente">
+  <defs>
+    <linearGradient id="body" x1="0" x2="1"><stop offset="0" stop-color="#0b2e22"/><stop offset=".32" stop-color="#16503c"/><stop offset=".72" stop-color="#0b2e22"/><stop offset="1" stop-color="#0b2e22"/></linearGradient>
+    <linearGradient id="lid" x1="0" x2="1"><stop offset="0" stop-color="#a98424"/><stop offset=".4" stop-color="#e6c75a"/><stop offset="1" stop-color="#a98424"/></linearGradient>
+  </defs>
+
+  <ellipse cx="400" cy="905" rx="240" ry="26" fill="#000" opacity=".12"/>
+  <rect x="255" y="150" width="290" height="120" rx="20" fill="url(#lid)"/>
+  <g stroke="#000" stroke-opacity=".14" stroke-width="3"><line x1="278" y1="162" x2="278" y2="258"/><line x1="295" y1="162" x2="295" y2="258"/><line x1="312" y1="162" x2="312" y2="258"/><line x1="329" y1="162" x2="329" y2="258"/><line x1="346" y1="162" x2="346" y2="258"/><line x1="363" y1="162" x2="363" y2="258"/><line x1="380" y1="162" x2="380" y2="258"/><line x1="397" y1="162" x2="397" y2="258"/><line x1="414" y1="162" x2="414" y2="258"/><line x1="431" y1="162" x2="431" y2="258"/><line x1="448" y1="162" x2="448" y2="258"/><line x1="465" y1="162" x2="465" y2="258"/><line x1="482" y1="162" x2="482" y2="258"/><line x1="499" y1="162" x2="499" y2="258"/><line x1="516" y1="162" x2="516" y2="258"/></g>
+  <rect x="272" y="264" width="256" height="32" rx="6" fill="#0b2e22"/>
+  <rect x="190" y="290" width="420" height="600" rx="72" fill="url(#body)"/>
+  <rect x="226" y="330" width="24" height="500" rx="12" fill="#fff" opacity=".1"/>
+  <rect x="225" y="400" width="350" height="370" rx="26" fill="#faf8f3"/>
+
+  <path d="M400 426 C354 462 354 500 400 522 C446 500 446 462 400 426Z" fill="#2e7d32"/><path d="M400 440 V516" stroke="#faf8f3" stroke-width="3" fill="none"/>
+  <text x="400" y="590" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="60" font-weight="700" fill="#0f3d2e">Col&#225;geno</text>
+  <text x="400" y="640" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="34" fill="#16503c">hidrolizado</text>
+  <line x1="320" y1="676" x2="480" y2="676" stroke="#d4af37" stroke-width="3"/>
+  <text x="400" y="722" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#5c6370">[Ejemplo] 300 g</text>
+
+</svg>

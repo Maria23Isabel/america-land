@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="description" content="Verifica la autenticidad de un producto: escanea el QR de su holograma o escribe su código de autenticación. / Check a product is genuine by scanning its hologram QR or typing its authentication code." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#052a20" />
+    <link rel="icon" type="image/svg+xml" href="/america-land/verify-favicon.svg" />
+    <script>
+      // El modo claro u oscuro que este navegador ya eligió, puesto antes de pintar nada: sin esto quien usa el sistema en claro vería un parpadeo negro.
+      (function () {
+        try {
+          var tema = localStorage.getItem('al:tema');
+          if (tema !== 'claro' && tema !== 'oscuro') {
+            tema = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'claro' : 'oscuro';
+          }
+          document.documentElement.dataset.tema = tema;
+        } catch (e) {
+          // Sin almacenamiento o sin matchMedia: se queda en el modo oscuro de siempre y React lo corrige al arrancar.
+        }
+      })();
+    </script>
+    <script>
+      // Quien llega escaneando el QR ya trae el código: la consulta sale ahora mismo, sin esperar a que baje y arranque el resto de la página.
+      (function () {
+        try {
+          var api = '%VITE_VERIFY_API%';
+          if (api.charAt(0) === '%') api = 'https://qa.herbavidaperu.com/api';
+          api = api.replace(/\/+$/, '');
+          // Las fotos de la marca salen de otro origen: abrir esa conexión ya, en paralelo, adelanta la imagen más grande de la página.
+          var fotos = '%VITE_VERIFY_PHOTOS%';
+          if (fotos.charAt(0) !== '%') {
+            var enlace = document.createElement('link');
+            enlace.rel = 'preconnect';
+            enlace.href = fotos;
+            enlace.crossOrigin = 'anonymous';
+            document.head.appendChild(enlace);
+          }
+          var q = new URLSearchParams(location.search);
+          var raw = (q.get('code') || q.get('c') || '').toUpperCase().replace(/[\s-]+/g, '');
+          var body = raw.indexOf('HV') === 0 ? raw.slice(2) : raw;
+          var code = 'HV-' + body;
+          if (!/^HV-[ABCDEFGHJKMNPQRSTUVWXYZ2-9]{8}$/.test(code)) return;
+          window.__early = {
+            code: code,
+            api: api,
+            p: fetch(api + '/verify/' + encodeURIComponent(code), { headers: { accept: 'application/json' }, cache: 'no-store' }).then(function (res) {
+              return res.json().then(function (b) { return { status: res.status, body: b }; }, function () { return { status: res.status, body: null }; });
+            }),
+          };
+          window.__early.p.catch(function () {});
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preload" href="/america-land/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/america-land/fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <title>Verifica tu producto</title>
+    <script type="module" crossorigin src="/america-land/assets/verify-BofdI7oQ.js"></script>
+    <link rel="modulepreload" crossorigin href="/america-land/assets/jsx-runtime-BHBShjHl.js">
+    <link rel="stylesheet" crossorigin href="/america-land/assets/verify-CGSBv3ca.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

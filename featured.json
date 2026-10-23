@@ -1,0 +1,116 @@
+{
+  "brand": {
+    "name": "DXN",
+    "description": "DXN es una compañía malasia fundada en 1993, conocida por construir su catálogo alrededor del ganoderma lucidum, el lingzhi de la tradición asiática. Su oferta no se queda en cápsulas: abarca suplementos dietarios, alimentos y bebidas como el café con lingzhi en sobres individuales, cuidado personal, productos para el hogar y sistemas para filtrar el agua.\n\nLa marca opera con venta directa y presencia en muchos países, bajo el lema One World One Market. Su visual es de rojo intenso con azul y verde, y los sobres de café son el formato que más se comparte en casa y en la oficina.",
+    "definition": "DXN es una empresa de Malasia que trabaja desde 1993 con productos a base de ganoderma lucidum, el lingzhi asiático. Su catálogo mezcla suplementos dietarios, alimentos y bebidas —el café con lingzhi en sobres es el más popular—, además de cuidado personal y artículos de hogar. Es una marca de venta directa con presencia internacional y empaque rojo, azul y verde.",
+    "care": "Guarda las cajas y los sobres en un lugar fresco y seco, lejos de la ventana y del calor de la cocina; el café en sobre sufre con la humedad. Cierra la bolsa original con el clip o pasa los sobres a un recipiente con tapa. Mantén los productos fuera del alcance de los niños y prepara el sobre con agua caliente al momento, sin dejarlo preparado por horas.",
+    "tags": [
+      "ganoderma",
+      "café funcional",
+      "suplementos",
+      "malasia",
+      "venta directa",
+      "cuidado personal",
+      "sobres individuales"
+    ],
+    "definitionTags": [
+      "suplemento dietario",
+      "bebidas y café",
+      "ganoderma lucidum",
+      "malasia",
+      "venta directa"
+    ],
+    "colors": [
+      {
+        "name": "Café tostado",
+        "hex": "#8B3903"
+      },
+      {
+        "name": "Oro",
+        "hex": "#CD8F32"
+      },
+      {
+        "name": "Tueste profundo",
+        "hex": "#742E06"
+      }
+    ],
+    "testimonials": [],
+    "images": {
+      "inicio": [
+        "https://lh3.googleusercontent.com/d/1XDfD9538HsJg5HzvRds8ryLJ5VIzh_ti=w1000"
+      ],
+      "marca": [
+        "https://fotos-qa.herbavidaperu.com/773f506b4cf2914e.webp",
+        "https://fotos-qa.herbavidaperu.com/f3a6baac578d7f0f.webp",
+        "https://fotos-qa.herbavidaperu.com/bec4fae781bdd3fe.webp"
+      ],
+      "verificacion": [
+        "https://fotos-qa.herbavidaperu.com/67b95301b9a6e9c6.webp",
+        "https://fotos-qa.herbavidaperu.com/9aaa7f7f0c2815a0.webp"
+      ]
+    }
+  },
+  "products": [
+    {
+      "name": "2 en 1",
+      "sku": "HV-01409",
+      "presentation": "Sachets",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1-c7ZhwtSmsLyj1B6kS2c0Q7zuXTelNf8=w1000",
+      "category": "DXN"
+    },
+    {
+      "name": "3 en 1",
+      "sku": "HV-01412",
+      "presentation": "Sachets",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1WRuyp66EOnTtNhfUdMybi-OXzq1mAzZU=w1000",
+      "category": "DXN"
+    },
+    {
+      "name": "Cocozhi",
+      "sku": "HV-01408",
+      "presentation": "Sachets",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1uDa11kIchfSiL6fQFZ2jyBA0mXgiPOeh=w1000",
+      "category": "DXN"
+    },
+    {
+      "name": "Spirulina DXN",
+      "sku": "HV-01413",
+      "presentation": "Sachets",
+      "imageUrl": "https://lh3.googleusercontent.com/d/14lT31RBr6XKEYlT06VjUtobUNZfq3S1W=w1000",
+      "category": "DXN"
+    },
+    {
+      "name": "Vita Café 6 en 1",
+      "sku": "HV-01411",
+      "presentation": "Sachets",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1knicSi_W0ERugXgn1TAs1BHmIL5LQzfU=w1000",
+      "category": "DXN"
+    },
+    {
+      "name": "Zhi Mocha",
+      "sku": "HV-01410",
+      "presentation": "Sachets",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1XDfD9538HsJg5HzvRds8ryLJ5VIzh_ti=w1000",
+      "category": "DXN"
+    }
+  ],
+  "info": {
+    "madeIn": "malasia",
+    "es": {
+      "tagline": null,
+      "description": "Café negro tinto instantáneo, libre de azúcar y crema, combinado con extracto de Ganoderma lucidum para un sabor intenso y saludable.",
+      "benefits": [
+        "Ayuda a reducir el estrés y la ansiedad, favorece la pérdida de peso y el control de la glucosa, mejora la digestión y actúa como un potente antioxidante.",
+        "Estímulo mental"
+      ],
+      "ingredients": [
+        "Café instantáneo fino y extracto de Ganoderma lucidum (sin azúcar ni lácteos)"
+      ],
+      "usage": null,
+      "contents": null,
+      "testimonials": [],
+      "warning": null
+    },
+    "en": null
+  }
+}
